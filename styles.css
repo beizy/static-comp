@@ -22,8 +22,8 @@ header {
 
 main {
   width: 100vw;
-  /* height: 80vh; */
-  background-color: darkseagreen;
+  /* height: 100vh; */
+  background-color: #efefef;
 }
 
 .card-container {
@@ -42,7 +42,7 @@ main {
 .nav-left {
   width: 50%;
   height: 80%;
-  border: 1px solid salmon;
+  /* border: 1px solid salmon; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -54,7 +54,7 @@ main {
 .nav-right {
   width: 30%;
   height: 80%;
-  border: 1px solid salmon;
+  /* border: 1px solid salmon; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -118,15 +118,98 @@ main {
   transform: translateY(25%);
 }
 
-card {
-  width: 22vw;
-  height: 44vh;
-  background-color: white;
-  border: solid 1px black;
-}
-
 main h1 {
   line-height: 15vh;
   padding-left: 2%;
   color: #4e4e4e;
+}
+
+card {
+  width: 22vw;
+  height: 50vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 6px 3px rgb(0 0 0 / 0.2);
+}
+
+.card-head {
+  width: 100%;
+  height: 35%;
+  background-color: lightsteelblue;
+  position: relative;
+}
+
+img.share-icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.views-box {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.views-box p {
+  color: white;
+  width: 48px;
+}
+
+.views-box p:nth-child(2) {
+  font-size: 2.5vw;
+  letter-spacing: 3px;
+}
+
+.recipient-box {
+  padding-left: 15px;
+}
+
+.recipient-box p:nth-child(1) {
+  font-size: 1.5vw;
+  color: #626262;
+}
+
+.recipient-box p:nth-child(2) {
+  font-size: 1.2vw;
+  color: #989899;
+}
+
+.url-box {
+  width: 90%;
+  height: 15%;
+  margin-left: 15px;
+  padding: 8px 5px;
+  color: #989899;
+  background-color: #efefef;
+  overflow-wrap: break-word;
+}
+
+.playlist-box {
+  padding-left: 15px;
+  color: #626262;
+}
+
+.playlist-box p:nth-child(1) {
+  font-size: 1.2vw;
+}
+
+.playlist-box p:nth-child(2) {
+  font-size: 1.5vw;
+}
+
+.attachment-box {
+  padding-left: 15px;
+  color: #626262;
+}
+
+.attachment-box p:nth-child(1) {
+  font-size: 1.2vw;
+}
+
+.attachment-box p:nth-child(2) {
+  font-size: 2.5vw;
+  color: #25b5fd;
 }
