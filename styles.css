@@ -6,6 +6,8 @@
 
 body {
   background-color: pink;
+  font-family: "Montserrat", sans-serif;
+
   /* width: 100vw;
   height: 100vh; */
 }
@@ -34,7 +36,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 15px;
+  row-gap: 20px;
   justify-items: center;
   justify-content: right;
 }
@@ -97,8 +99,10 @@ main {
 .logo-box h1 {
   color: white;
   letter-spacing: -2px;
+  font-family: "Suez One", serif;
+  font-size: 4vw;
   line-height: 48px;
-  transform: translateY(15%);
+  transform: translateY(10%);
 }
 
 .login-box img {
@@ -137,8 +141,50 @@ card {
 .card-head {
   width: 100%;
   height: 35%;
-  background-color: lightsteelblue;
   position: relative;
+}
+
+#card1 {
+  background: url("images/floating-cat.jpg");
+  background-size: cover;
+}
+#card2 {
+  background: url("images/processing-cat.jpeg");
+  background-size: cover;
+}
+#card3 {
+  background: url("images/doorjacking-cat.jpeg");
+  background-size: cover;
+}
+#card4 {
+  background: url("images/finger-cat.jpeg");
+  background-size: cover;
+}
+#card5 {
+  background: url("images/dj-cat.jpeg");
+  background-size: cover;
+}
+#card6 {
+  background: url("images/thinking-cat.jpg");
+  background-size: cover;
+}
+#card7 {
+  background: url("images/weed-cat.jpeg");
+  background-size: cover;
+}
+#card8 {
+  background: url("images/wasted-cat.jpeg");
+  background-size: cover;
+}
+
+.dim-mask {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dim-mask:hover {
+  visibility: hidden;
 }
 
 img.share-icon {
