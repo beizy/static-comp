@@ -3,234 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no , initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
     <title>Document</title>
+
     <link rel="stylesheet" href="./styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="nav-left">
-        <li>
-          <img src="images/sharethis-24.png" alt="share tab" />
-          <p>SHARES</p>
-        </li>
-        <li>
-          <img src="images/list-2-24.png" alt="playlist tab" />
-          <p>PLAYLISTS</p>
-        </li>
-        <li>
-          <img src="images/user-24.png" alt="personal videos tab" />
-          <p>PERSONAL VIDEOS</p>
-        </li>
-      </div>
-      <div class="nav-right">
+      <div class="container header-container">
         <div class="login-box">
-          <img src="images/login-24.png" alt="user login icon" />
-          <p>Loggedin Username</p>
-          <p id="triangle"></p>
+          <p class="material-icons-outlined">account_circle</p>
+          <p>Admin Username</p>
+          <p class="material-icons-outlined">arrow_drop_down</p>
         </div>
+        <ul class="nav-list">
+          <li>
+            <a href="#"><span class="material-icons-outlined">share</span>SHARES</a>
+          </li>
+          <li>
+            <a href="#"><span class="material-icons-outlined">format_list_bulleted</span>PLAYLIST</a>
+          </li>
+          <li>
+            <a href="#"><span class="material-icons-outlined">person</span>PERSONAL VIDEOS</a>
+          </li>
+        </ul>
+
         <div class="logo-box">
-          <h1>I Hate CSS!</h1>
-          <img src="images/apple-48.png" alt="website logo" />
+          <h1>2Win!</h1>
+          <p class="material-icons-outlined">kitesurfing</p>
         </div>
       </div>
     </header>
     <main>
-      <h1 id="main-title">Shares</h1>
-      <div class="card-container">
-        <card>
-          <div class="card-head" id="card1">
-            <div class="dim-mask"></div>
-            <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
-            <div class="views-box">
-              <p>Views</p>
-              <p>02</p>
+      <div class="container main-container">
+        <h1 id="main-title">Shares</h1>
+        <div class="cardholder">
+          <card id="card1">
+            <div class="card-img">
+              <div class="dim-mask"></div>
+              <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
+              <div class="views-box">
+                <p>VIEWS</p>
+                <p>02</p>
+              </div>
             </div>
-          </div>
-          <div class="recipient-box">
-            <p>Recipient's Namehere</p>
-            <p>Monday 01/23/16 10:22am</p>
-          </div>
-          <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
-          <div class="playlist-box">
-            <p>PLAYLIST</p>
-            <p>Name of Playlist</p>
-          </div>
-          <div class="attachment-box">
-            <p>ATTACHMENT</p>
-            <p>04</p>
-          </div>
-        </card>
+            <div class="recipient-box">
+              <p>Recipient's Namehere</p>
+              <p>Monday 01/23/16 10:22am</p>
+            </div>
+            <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
+            <div class="playlist-box">
+              <p>PLAYLIST</p>
+              <p>Name of Playlist</p>
+            </div>
+            <div class="attachment-box">
+              <p>ATTACHMENTS</p>
+              <p>04</p>
+            </div>
+          </card>
 
-        <card>
-          <div class="card-head" id="card2">
-            <div class="dim-mask"></div>
-            <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
-            <div class="views-box">
-              <p>Views</p>
-              <p>02</p>
+          <card id="card2">
+            <div class="card-img">
+              <div class="dim-mask"></div>
+              <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
+              <div class="views-box">
+                <p>VIEWS</p>
+                <p>02</p>
+              </div>
             </div>
-          </div>
-          <div class="recipient-box">
-            <p>Recipient's Namehere</p>
-            <p>Monday 01/23/16 10:22am</p>
-          </div>
-          <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
-          <div class="playlist-box">
-            <p>PLAYLIST</p>
-            <p>Name of Playlist</p>
-          </div>
-          <div class="attachment-box">
-            <p>ATTACHMENT</p>
-            <p>04</p>
-          </div>
-        </card>
+            <div class="recipient-box">
+              <p>Recipient's Namehere</p>
+              <p>Monday 01/23/16 10:22am</p>
+            </div>
+            <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
+            <div class="playlist-box">
+              <p>PLAYLIST</p>
+              <p>Name of Playlist</p>
+            </div>
+            <div class="attachment-box">
+              <p>ATTACHMENTS</p>
+              <p>04</p>
+            </div>
+          </card>
 
-        <card>
-          <div class="card-head" id="card3">
-            <div class="dim-mask"></div>
-            <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
-            <div class="views-box">
-              <p>Views</p>
-              <p>02</p>
+          <card id="card3">
+            <div class="card-img">
+              <div class="dim-mask"></div>
+              <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
+              <div class="views-box">
+                <p>VIEWS</p>
+                <p>02</p>
+              </div>
             </div>
-          </div>
-          <div class="recipient-box">
-            <p>Recipient's Namehere</p>
-            <p>Monday 01/23/16 10:22am</p>
-          </div>
-          <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
-          <div class="playlist-box">
-            <p>PLAYLIST</p>
-            <p>Name of Playlist</p>
-          </div>
-          <div class="attachment-box">
-            <p>ATTACHMENT</p>
-            <p>04</p>
-          </div>
-        </card>
+            <div class="recipient-box">
+              <p>Recipient's Namehere</p>
+              <p>Monday 01/23/16 10:22am</p>
+            </div>
+            <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
+            <div class="playlist-box">
+              <p>PLAYLIST</p>
+              <p>Name of Playlist</p>
+            </div>
+            <div class="attachment-box">
+              <p>ATTACHMENTS</p>
+              <p>04</p>
+            </div>
+          </card>
 
-        <card>
-          <div class="card-head" id="card4">
-            <div class="dim-mask"></div>
-            <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
-            <div class="views-box">
-              <p>Views</p>
-              <p>02</p>
+          <card id="card4">
+            <div class="card-img">
+              <div class="dim-mask"></div>
+              <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
+              <div class="views-box">
+                <p>VIEWS</p>
+                <p>02</p>
+              </div>
             </div>
-          </div>
-          <div class="recipient-box">
-            <p>Recipient's Namehere</p>
-            <p>Monday 01/23/16 10:22am</p>
-          </div>
-          <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
-          <div class="playlist-box">
-            <p>PLAYLIST</p>
-            <p>Name of Playlist</p>
-          </div>
-          <div class="attachment-box">
-            <p>ATTACHMENT</p>
-            <p>04</p>
-          </div>
-        </card>
+            <div class="recipient-box">
+              <p>Recipient's Namehere</p>
+              <p>Monday 01/23/16 10:22am</p>
+            </div>
+            <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
+            <div class="playlist-box">
+              <p>PLAYLIST</p>
+              <p>Name of Playlist</p>
+            </div>
+            <div class="attachment-box">
+              <p>ATTACHMENTS</p>
+              <p>04</p>
+            </div>
+          </card>
 
-        <card>
-          <div class="card-head" id="card5">
-            <div class="dim-mask"></div>
-            <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
-            <div class="views-box">
-              <p>Views</p>
-              <p>02</p>
+          <card id="card5">
+            <div class="card-img">
+              <div class="dim-mask"></div>
+              <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
+              <div class="views-box">
+                <p>VIEWS</p>
+                <p>02</p>
+              </div>
             </div>
-          </div>
-          <div class="recipient-box">
-            <p>Recipient's Namehere</p>
-            <p>Monday 01/23/16 10:22am</p>
-          </div>
-          <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
-          <div class="playlist-box">
-            <p>PLAYLIST</p>
-            <p>Name of Playlist</p>
-          </div>
-          <div class="attachment-box">
-            <p>ATTACHMENT</p>
-            <p>04</p>
-          </div>
-        </card>
+            <div class="recipient-box">
+              <p>Recipient's Namehere</p>
+              <p>Monday 01/23/16 10:22am</p>
+            </div>
+            <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
+            <div class="playlist-box">
+              <p>PLAYLIST</p>
+              <p>Name of Playlist</p>
+            </div>
+            <div class="attachment-box">
+              <p>ATTACHMENTS</p>
+              <p>04</p>
+            </div>
+          </card>
 
-        <card>
-          <div class="card-head" id="card6">
-            <div class="dim-mask"></div>
-            <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
-            <div class="views-box">
-              <p>Views</p>
-              <p>02</p>
+          <card id="card6">
+            <div class="card-img">
+              <div class="dim-mask"></div>
+              <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
+              <div class="views-box">
+                <p>VIEWS</p>
+                <p>02</p>
+              </div>
             </div>
-          </div>
-          <div class="recipient-box">
-            <p>Recipient's Namehere</p>
-            <p>Monday 01/23/16 10:22am</p>
-          </div>
-          <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
-          <div class="playlist-box">
-            <p>PLAYLIST</p>
-            <p>Name of Playlist</p>
-          </div>
-          <div class="attachment-box">
-            <p>ATTACHMENT</p>
-            <p>04</p>
-          </div>
-        </card>
+            <div class="recipient-box">
+              <p>Recipient's Namehere</p>
+              <p>Monday 01/23/16 10:22am</p>
+            </div>
+            <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
+            <div class="playlist-box">
+              <p>PLAYLIST</p>
+              <p>Name of Playlist</p>
+            </div>
+            <div class="attachment-box">
+              <p>ATTACHMENTS</p>
+              <p>04</p>
+            </div>
+          </card>
 
-        <card>
-          <div class="card-head" id="card7">
-            <div class="dim-mask"></div>
-            <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
-            <div class="views-box">
-              <p>Views</p>
-              <p>02</p>
+          <card id="card7">
+            <div class="card-img">
+              <div class="dim-mask"></div>
+              <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
+              <div class="views-box">
+                <p>VIEWS</p>
+                <p>02</p>
+              </div>
             </div>
-          </div>
-          <div class="recipient-box">
-            <p>Recipient's Namehere</p>
-            <p>Monday 01/23/16 10:22am</p>
-          </div>
-          <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
-          <div class="playlist-box">
-            <p>PLAYLIST</p>
-            <p>Name of Playlist</p>
-          </div>
-          <div class="attachment-box">
-            <p>ATTACHMENT</p>
-            <p>04</p>
-          </div>
-        </card>
+            <div class="recipient-box">
+              <p>Recipient's Namehere</p>
+              <p>Monday 01/23/16 10:22am</p>
+            </div>
+            <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
+            <div class="playlist-box">
+              <p>PLAYLIST</p>
+              <p>Name of Playlist</p>
+            </div>
+            <div class="attachment-box">
+              <p>ATTACHMENTS</p>
+              <p>04</p>
+            </div>
+          </card>
 
-        <card>
-          <div class="card-head" id="card8">
-            <div class="dim-mask"></div>
-            <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
-            <div class="views-box">
-              <p>Views</p>
-              <p>02</p>
+          <card id="card8">
+            <div class="card-img">
+              <div class="dim-mask"></div>
+              <img class="share-icon" src="images/arrow-61-48.png" alt="share-user-icon" />
+              <div class="views-box">
+                <p>VIEWS</p>
+                <p>02</p>
+              </div>
             </div>
-          </div>
-          <div class="recipient-box">
-            <p>Recipient's Namehere</p>
-            <p>Monday 01/23/16 10:22am</p>
-          </div>
-          <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
-          <div class="playlist-box">
-            <p>PLAYLIST</p>
-            <p>Name of Playlist</p>
-          </div>
-          <div class="attachment-box">
-            <p>ATTACHMENT</p>
-            <p>04</p>
-          </div>
-        </card>
+            <div class="recipient-box">
+              <p>Recipient's Namehere</p>
+              <p>Monday 01/23/16 10:22am</p>
+            </div>
+            <div class="url-box">http://2win.2winstage.com/p/recipients_namehere</div>
+            <div class="playlist-box">
+              <p>PLAYLIST</p>
+              <p>Name of Playlist</p>
+            </div>
+            <div class="attachment-box">
+              <p>ATTACHMENTS</p>
+              <p>04</p>
+            </div>
+          </card>
+        </div>
       </div>
     </main>
   </body>

@@ -4,258 +4,294 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: pink;
-  font-family: "Montserrat", sans-serif;
+/* x-small screen */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    /* background-color: #fff; */
+  }
+}
 
-  /* width: 100vw;
-  height: 100vh; */
+/* small screen */
+@media screen and (min-width: 768px) {
+  .container {
+    /* background-color: pink; */
+  }
+}
+
+/* medium screen */
+@media screen and (min-width: 992px) {
+  .container {
+    /* background-color: blue; */
+  }
+}
+
+/* big screen */
+@media screen and (min-width: 1200px) {
+  .container {
+    background-color: lightblue;
+  }
+
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  width: 94%; /* container does not stretch full screen */
+  height: 100%;
+  margin: 0 auto; /* container is centered */
 }
 
 header {
-  width: 100vw;
-  height: 20vh;
+  width: 100%; /* background for header-container*/
+  height: 150px;
   background-color: #2b2b2b;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
-main {
-  width: 100vw;
-  /* height: 100vh; */
-  background-color: #efefef;
-}
-
-.card-container {
-  width: 96%;
-  height: 100%;
-  border: 1px solid salmon;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  row-gap: 20px;
-  justify-items: center;
-  justify-content: right;
-}
-
-.nav-left {
-  width: 50%;
-  height: 80%;
-  /* border: 1px solid salmon; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 20px;
-  padding-left: 25px;
-}
-
-.nav-right {
-  width: 30%;
-  height: 80%;
-  /* border: 1px solid salmon; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 20px;
-  padding-right: 25px;
-}
-
-.nav-left li {
-  list-style-type: none;
-}
-
-.nav-left li img {
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.nav-left li p {
-  display: inline-block;
-  vertical-align: middle;
-  color: #717171;
-  font-size: 1.8vw;
-}
-
-.nav-left li p:hover {
-  color: #25b5fd;
+.header-container {
+  position: relative;
+  /* border: 1px solid coral; */
 }
 
 .login-box {
+  position: absolute;
+  top: 10px;
+  right: 0;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
+  color: #25b5fd;
+  font-size: 1rem;
+}
+
+.login-box p:nth-child(1) {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.login-box p:nth-child(3) {
+  font-size: 3rem;
+}
+
+.nav-list {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list li {
+  list-style-type: none;
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #969696;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+.nav-list span {
+  color: #25b5fd;
+  font-size: 1.8rem;
+  transform: translateY(5px);
+  margin-right: 0.5rem;
+}
+
+.nav-list a:focus {
+  color: white;
 }
 
 .logo-box {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .logo-box h1 {
   color: white;
-  letter-spacing: -2px;
-  font-family: "Suez One", serif;
-  font-size: 4vw;
-  line-height: 48px;
-  transform: translateY(10%);
+  font-family: "Bree Serif", serif;
+  font-size: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
 }
 
-.login-box img {
-  margin-right: 5px;
+.logo-box p {
+  color: white;
+  font-size: 3.5rem;
+  height: 3.5rem;
 }
 
-.login-box p {
-  color: #25b5fd;
-  margin-right: 5px;
+/* start from below */
+
+main {
+  width: 100%;
+  height: 70rem;
+  background-color: #efefef;
 }
 
-#triangle {
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #25b5fd;
-  transform: translateY(25%);
+.main-container {
+  border: 1px solid purple;
 }
 
 main h1 {
-  line-height: 15vh;
-  padding-left: 2%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
   color: #4e4e4e;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardholder {
+  width: 100%;
+  border: 1px solid salmon;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1.5rem;
+  justify-items: start;
+  justify-content: stretch;
 }
 
 card {
-  width: 22vw;
-  height: 50vh;
+  width: 17rem;
+  height: 26rem;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 0 6px 3px rgb(0 0 0 / 0.2);
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-.card-head {
-  width: 100%;
-  height: 35%;
-  position: relative;
-}
-
-#card1 {
+#card1 div:nth-child(1) {
   background: url("images/floating-cat.jpg");
   background-size: cover;
 }
-#card2 {
+#card2 div:nth-child(1) {
   background: url("images/processing-cat.jpeg");
   background-size: cover;
 }
-#card3 {
+#card3 div:nth-child(1) {
   background: url("images/doorjacking-cat.jpeg");
   background-size: cover;
 }
-#card4 {
+#card4 div:nth-child(1) {
   background: url("images/finger-cat.jpeg");
   background-size: cover;
 }
-#card5 {
+#card5 div:nth-child(1) {
   background: url("images/dj-cat.jpeg");
   background-size: cover;
 }
-#card6 {
+#card6 div:nth-child(1) {
   background: url("images/thinking-cat.jpg");
   background-size: cover;
 }
-#card7 {
+#card7 div:nth-child(1) {
   background: url("images/weed-cat.jpeg");
   background-size: cover;
 }
-#card8 {
+#card8 div:nth-child(1) {
   background: url("images/wasted-cat.jpeg");
   background-size: cover;
+}
+
+.card-img {
+  width: 100%;
+  height: 35%;
+  position: relative;
+  /* background-size: cover !important;  does not work */
 }
 
 .dim-mask {
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4) !important; /* here !important works..... why??? */
 }
 
 .dim-mask:hover {
+  /*hover is not quite stable as any mouse move over the image will trigger/untrigger hover, causing an uncomfortable lightening effect. Could use :active instead*/
   visibility: hidden;
 }
 
 img.share-icon {
   position: absolute;
-  top: 15px;
-  left: 10px;
+  top: 1rem;
+  left: 0.6rem;
 }
 
 .views-box {
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 1rem;
+  right: 1.3rem;
 }
 
 .views-box p {
   color: white;
-  width: 48px;
+  font-size: 1rem;
+  /* width: 48px; */
 }
 
 .views-box p:nth-child(2) {
-  font-size: 2.5vw;
-  letter-spacing: 3px;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
 }
 
-.recipient-box {
-  padding-left: 15px;
+.recipient-box,
+.url-box,
+.playlist-box,
+.attachment-box {
+  margin-left: 1rem;
 }
 
 .recipient-box p:nth-child(1) {
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   color: #626262;
 }
 
 .recipient-box p:nth-child(2) {
-  font-size: 1.2vw;
+  font-size: 0.9rem;
   color: #989899;
 }
 
 .url-box {
   width: 90%;
-  height: 15%;
-  margin-left: 15px;
-  padding: 8px 5px;
+  padding: 0.5rem 0.3rem;
   color: #989899;
   background-color: #efefef;
+  font-size: 0.9rem;
   overflow-wrap: break-word;
 }
 
 .playlist-box {
-  padding-left: 15px;
   color: #626262;
 }
 
 .playlist-box p:nth-child(1) {
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 
 .playlist-box p:nth-child(2) {
-  font-size: 1.5vw;
+  font-size: 1.1rem;
 }
 
 .attachment-box {
-  padding-left: 15px;
   color: #626262;
+  margin-bottom: 1rem;
 }
 
 .attachment-box p:nth-child(1) {
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 
 .attachment-box p:nth-child(2) {
-  font-size: 2.5vw;
+  font-size: 1.8rem;
   color: #25b5fd;
 }
