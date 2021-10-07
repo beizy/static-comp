@@ -175,37 +175,44 @@ card {
 }
 #card2 div:nth-child(1) {
   background: url("images/processing-cat.jpeg");
+  background-size: cover;
 }
 #card3 div:nth-child(1) {
   background: url("images/doorjacking-cat.jpeg");
+  background-size: cover;
 }
 #card4 div:nth-child(1) {
   background: url("images/finger-cat.jpeg");
+  background-size: cover;
 }
 #card5 div:nth-child(1) {
   background: url("images/dj-cat.jpeg");
+  background-size: cover;
 }
 #card6 div:nth-child(1) {
   background: url("images/thinking-cat.jpg");
+  background-size: cover;
 }
 #card7 div:nth-child(1) {
   background: url("images/weed-cat.jpeg");
+  background-size: cover;
 }
 #card8 div:nth-child(1) {
   background: url("images/wasted-cat.jpeg");
+  background-size: cover;
 }
 
 .card-img {
   width: 100%;
   height: 35%;
   position: relative;
-  background-size: cover !important;
+  /* background-size: cover !important;  does not work because #card1 div has higher specificity*/
 }
 
 .dim-mask {
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 /* .dim-mask:hover {
